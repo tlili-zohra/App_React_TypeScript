@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Greeting from "./Greeting";
+import Counter from "./Counter";
 
 function App() {
+  /*const getName = (): string => {
+    return prompt("Give me Your name") || "Guest";
+  };
+
+  const name = getName();*/
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Greeting name="Zohra" />
+      <Counter />
     </div>
   );
 }
